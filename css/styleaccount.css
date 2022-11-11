@@ -1,0 +1,199 @@
+body {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.account-card {
+  padding: 40px;
+  width: 300px;
+  background-color: #F7F7F7;
+  margin: auto;
+  border-radius: 2px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  position: absolute;
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%);
+  position: fixed;
+}
+
+.about-card{
+  width: 60%;
+  margin: auto;
+  width: 45%;
+}
+
+.title {
+  color: grey;
+  text-align: center;
+}
+
+.account-card img{
+  width: 100px;
+  border:4px solid #b044e2;
+  border-radius: 110px;
+  display: block;
+  margin: 10px auto;
+}
+
+i:hover{
+  border-radius: 50px;
+  box-shadow: 1px 4px 2px 2px #a6a6a7;
+  width: 30px;
+  transition: all 0.2s linear;
+  cursor: pointer;
+  transform: scale(1.4);
+}
+
+.icon{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100%;
+}
+
+#bio{
+  margin-top: 10px;
+  text-align: center;
+}
+
+.contact-card{
+  width: 500px;
+}
+
+.account-card input[type=submit] {
+  width: 100%;
+  display: block;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.account-card input[type=text], input[type=password] {
+  height: 44px;
+  font-size: 16px;
+  width: 100%;
+  margin-bottom: 10px;
+  -webkit-appearance: none;
+  background: #fff;
+  border: 1px solid #d9d9d9;
+  border-top: 1px solid #c0c0c0;
+  padding: 0 8px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+.account-card input[type=text]:hover, input[type=password]:hover {
+  border: 1px solid #b9b9b9;
+  border-top: 1px solid #a0a0a0;
+  -moz-box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+  -webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+  box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+}
+
+.account {
+  text-align: center;
+  font-size: 14px;
+  font-family: 'Arial', sans-serif;
+  font-weight: 700;
+  height: 36px;
+  padding: 0 8px;
+}
+
+.account-submit {
+  border: 0px;
+  color: #fff;
+  text-shadow: 0 1px rgba(0,0,0,0.1); 
+  background-color: #4d90fe;
+}
+
+.account-submit:hover {
+  border: 0px;
+  text-shadow: 0 1px rgba(0,0,0,0.3);
+  background-color: #357ae8;
+}
+
+.account-card a {
+  text-decoration: none;
+  color: #666;
+  font-weight: 400;
+  text-align: center;
+  display: inline-block;
+  opacity: 0.8;
+  transition: opacity ease 0.5s;
+  margin: 0 8%;
+}
+
+.account-card a:hover {
+  opacity: 1;
+}
+
+.account-help {
+  width: 100%;
+  text-align: center;
+  font-size: 12px;
+}
+
+.account-help a{
+  font-weight: bold;
+  color: black;
+}
+
+.account-help a:hover{
+  font-weight: bold;
+  color: black;
+  font-size: 13px;
+}
+
+.fa-facebook{
+  color: #024df0;
+  height: 29px;
+  padding-top: 6px;
+
+}
+.fa-instagram{
+  color: #e84393;
+  height: 29px;
+  padding-top: 4px;
+}
+.fa-twitter{
+  color: #0097e6;
+  height: 29px;
+  padding-top: 4px;
+}
+.fa-linkedin{
+  color: #0e76a8;
+  height: 29px;
+  padding-top: 4px;
+}
+
+@media (min-width: 928px) {
+  .account-card{
+    width: 80vh;
+  }
+}
+
+@media (max-width: 1024px) {
+  .about-card{
+    width: 80vh;
+  }
+  .account-card{
+    width: 60vh;
+  }
+}
+
+@media (max-width: 764px) {
+  .about-card{
+    width: 60vh;
+  }
+}
+@media (max-width: 525px) {
+  .about-card{
+    width: 40vh;
+  }
+  .account-card{
+    width: 40vh;
+  }
+}
