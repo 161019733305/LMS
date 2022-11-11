@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Saira+Stencil+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/styleaccount.css" />
+    <link rel="stylesheet" type="text/css" href="css/stylen.css" />
+    <link rel="icon" href="book.png" type="image/icon type">
+    <title>Bookery</title>
+</head>
+<body>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+          <i class="fas fa-bars"></i>
+        </label>
+        <a href="index.html">
+          <h1>Bookery</h1>
+        </a>
+        <ul>
+          <li><a class="active" href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Request a book</a></li>
+          <li><a href="login.html">Log in</a></li>
+        </ul>
+      </nav>
+    <main>
+        <section class="header">
+            <div class="items-controller">
+                <h5>Show</h5>
+                <select name="" id="itemperpage">
+                    <option value="02">02</option>
+                    <option value="05">05</option>
+                    <option value="08" selected>10</option>
+                    <option value="15">15</option>
+                    <option value="20">20</option>
+                </select>
+                <h5>Per Page</h5>
+            </div>
+            <div class="search">
+                <!-- <label for="cars">Search:</label> -->
+
+                <select name="Search" id="Search">
+                <option value="search">Search</option>
+                <option value="title">Title</option>
+                <option value="author">Author</option>
+                <option value="subject">Subject</option>
+                <option value="date">Date</option>
+                </select>
+                
+                <input type="text" name="" id="search" placeholder="Search">
+            </div>
+        </section>
+        <section class="field">
+            <table class="content-table">
+                <thead>
+                    <tr>
+                      <th><input type="checkbox" name="" id="selectAll"></th>
+                      <th>S.No</th>
+                      <th>Title</th>
+                      <th>Book</th>
+                      <th>Author</th>
+                      <th>Subject</th>
+                      <th>Publish Date</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td>01</td>
+                        <td>The Road to React</td>
+                        <td><img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1513179373i/37503118.jpg" alt="The Road to React" width="200" height="250"></td>
+                        <td>Robin Wieruch
+                        </td>
+                        <td> <p>A lot of roadmaps exist on how to master React. This book uses the common sense of these roads and weaves it into the implementation of an attractive app. You will build a Hacker News React app. On the road you will learn ES6, React with all its basics and advanced concepts and internal state management.' to 'A lot of roadmaps exist on how to master React. This book uses the common sense of these roads and weaves it into the implementation of an attractive app</p></td>
+                        <td> <p>First published January 1, 2017</p></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td>02</td>
+                        <td>Get Started With HTML5</td>
+                        <td><img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1385693423i/19035256.jpg" alt="Girl in a jacket" width="200" height="250"></td>
+                        <td>Matthew Hughes
+                            , 
+                            Justin Pot
+                             (Editor)
+                            , 
+                            Angela Randall
+                             (Editor)
+                            </td>
+                        <td><p>HTML5 is used to describe a really diverse group of things. It's a standard of writing web pages. It's a collection of APIs. It's a new way of adding interactivity to web pages. HTML5 is all that and more.
+
+                            The aim of this guide is to provide a gentle introduction to these amazing new web technologies, and to show you some cool ways of incorporating them into your websites.</p>
+                            </td>
+                        <td><p>First published July 11, 2013</p> </td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td>03</td>
+                        <td>How To Write A Privacy Policy For Your Website</td>
+                        <td>Ashton Cox<img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1397911905i/21950096.jpg" alt="" width="200" height="250"></td>
+                        
+                        <td>Amy Mulcreevy
+                            , 
+                            Justin Pot
+                             (Editor)
+                            , 
+                            Angela Randall
+                             (Editor)</td>
+                        <td><p> </p></td>
+                        <td><i class="fa fa-edit"></i> | <i class="fa fa-trash"></i></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td>04</td>
+                        <td>Technical Writing For Dummies</td>
+                        <td>Cedric Kelly<img src="https://global-uploads.webflow.com/5f7178312623813d346b8936/629f49b7bfa7bcba2fcfc408_EoFuPYX2IDmmKhYsPS83T7KtupMw86n-5bvNP4P_C_5Y6KJB2aXxaluJmCGh9LbKj-Q9MhaHYxJuNnx4OKJ-10haJKjXhrJqCi5Jadgd_lD25uiDT-6yEsfcdd9ip-Sp6agHt20ZpYfYg8PKwg.png " alt="Technical Writing For Dummies" width="200" height="250"></td>
+                        
+                        <td>Sheryl Lindsell-Roberts</td>
+                        <td><p>Like most For Dummies books, this one is an excellent choice for anyone who wants to get a nice birds-eye view on topics like the technical writing job market, the process of creating technical documentation, and all kind of different documents that fall under this category.
+
+                            Sheryl Lindsell-Roberts emphasizes the need for technical documentation to be engaging to really help users achieve their goals and provides ample advice on how to avoid writing tedious and confusing documents, which is a skill every technical writer should master.</p> </td>
+                        <td><p>March 13, 2001, by For Dummies</p> </td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td>05</td>
+                        <td>The Insider’s Guide to Technical Writing</td>
+                        <td><img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1592265780i/54109255.jpg " alt="System Design Interview – An Insider's Guide " width="200" height="250"></td>
+                        
+                        <td>Alex Xu</td>
+                        <td><p>The system design interview is considered to be the most complex and most difficult technical job interview by many. This book provides a step-by-step framework on how to tackle a system design question. It includes many real-world examples to illustrate the systematic approach with detailed steps that you can follow.
+                        </p> </td>
+                        <td><p> First published June 10, 2020</p> </td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td>06</td>
+                        <td>How People Learn: Brain, Mind, Experience, and School</td>
+                        <td>Brielle Williamson<img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1297371909i/65322.jpg" alt="Girl in a jacket" width="200" height="250"></td>
+                        
+                        <td>John D. Bransford
+                            (Editor)
+                           , 
+                           Ann L. Brown
+                            (Editor)
+                           , 
+                           Rodney R. Cocking
+                            (Editor)</td>
+                        <td><p>Expanded to show how the theories and insights from the original hardcover edition can be translated into actions and practice, readers can now make valuable connections between classroom activities and learning behavior. This book offers exciting -- and useful -- information about the mind and the brain that provides some answers on how people actually learn.</p> </td>
+                        <td> | <p>First published October 1, 1998</p> </td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td>07</td>
+                        <td>Pro Git</td>
+                        <td><img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1465277717i/30365702.jpg" alt="Pro Git" width="200" height="250"></td>
+                        <td>Scott Chacon</td>
+                        <td><p>Git is the version control system developed by Linus Torvalds for Linux kernel development. It took the open source world by storm since its inception in 2005, and is used by small development shops and giants like Google, Red Hat, and IBM, and of course many open source projects.
+
+                            * A book by Git experts to turn you into a Git expert;
+                            * Introduces the world of distributed version control;
+                            * Shows how to build a Git development workflow. </p></td>
+                        <td>First published January 1, 2009</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td>08</td>
+                        <td>Responsive Web Design Overview For Beginners</td>
+                        <td><img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1382718256i/18716510.jpg" alt="Responsive Web Design Overview For Beginners" width="200" height="250"></td>
+                        <td> Brett Romero</td>
+                        
+                        <td>In Responsive Web Design Overview For Beginners, you'll get an overview of what to expect when building a responsive website.
+
+                            You'll learn about all of the following:
+                            Responsive Web Design Overview
+                            Usability of Smaller Screens
+                            Why Plugins Aren't the Solution
+                            Why a Responsive Web Design Theme May Not Be Best for Your Existing Website
+                            Risks Involved with Responsive Web Design Frameworks
+                            Responsive Web Design or Mobile Website: Which Is Right for You?
+                            Measuring the Cost of a Responsive Web Design
+                            Designer's View on Cost
+                            Handling Ads in Your Responsive Web Design
+                            Responsive Web Design and CSS</td>
+                        <td><p> First published October 1, 2013</p> </td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td>09</td>
+                        <td>Clean Code: A Handbook of Agile Software Craftsmanship</td>
+                        <td><img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1436202607i/3735293.jpg" alt="Clean Code: A Handbook of Agile Software Craftsmanship" width="200" height="250"></td>
+                        <td>Robert C. Martin</td>
+                        <td><p>Even bad code can function. But if code isn't clean, it can bring a development organization to its knees. Every year, countless hours and significant resources are lost because of poorly written code. But it doesn't have to be that way. </p></td>
+                        <td><p>First published January 1, 2007 </p></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td>10</td>
+                        <td>A Discipline of Programming</td>
+                        <td><img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1348910294i/2276288.jpg" alt="A Discipline of Programming" width="200" height="250"></td>
+                        <td>Edsger W. Dijkstra</td>
+                        <td><p>A programming language is a formal constructed language designed to communicate instructions to a machine, particularly a computer. Programming languages can be used to create programs to control the behavior of a machine or to express algorithms. </p></td>
+                        <td><p>First published March 1, 1976 </p></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td>11</td>
+                        <td>The Little Schemer</td>
+                        <td><img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1347456079i/548914.jpg" alt="The Little Schemer" width="200" height="250"></td>
+                        <td>Daniel P. Friedman
+                            , 
+                            Matthias Felleisen
+                            , 
+                            Duane Bibby
+                             (Illustrator)</td>
+                        <td><p>The notion that “thinking about computing is one of the most exciting things the human mind can do” sets both The Little Schemer (formerly known as The Little LISPer) and its new companion volume, The Seasoned Schemer, apart from other books on LISP. </p></td>
+                        <td><p>First published January 1, 1974 </p></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td>12</td>
+                        <td>Hacker's Delight</td>
+                        <td><img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1385216522i/276079.jpg" alt="Hacker's Delight" width="200" height="250"></td>
+                        <td>Henry S. Warren Jr.
+                            , 
+                            Guy L. Steele Jr.
+                             (Foreword by)</td>
+                        <td><p> Aiming to tell the dark secrets of computer arithmetic, this title is suitable for library developers, compiler writers, and lovers of elegant hacks.</p></td>
+                        <td><p>First published July 27, 2002 </p></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td>13</td>
+                        <td>Introduction to System Design</td>
+                        <td><img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1624938995i/58451030.jpg" alt="Introduction to System Design" width="200" height="250"></td>
+                        <td>Shivam Singh
+                        </td>
+                        <td><p>Systems design is the process of defining the architecture, product design, modules, interfaces, and data for a system to satisfy specified requirements. Systems design could be seen as the application of systems theory to product development. As a result, there is some overlap with the disciplines of systems analysis, systems architecture, and systems engineering. </p></td>
+                        <td><p> Published January 1, 2021</p> </td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td>14</td>
+                        <td>Code Complete</td>
+                        <td><img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1396837641i/4845.jpg" alt="Code Complete" width="200" height="250"></td>
+                        <td>Steve McConnell</td>
+                        <td><p>Widely considered one of the best practical guides to programming, Steve McConnell's original CODE COMPLETE has been helping developers write better software for more than a decade. Now this classic book has been fully updated and revised with leading-edge practices--and hundreds of new code samples--illustrating the art and science of software construction. Capturing the body of knowledge available from research, academia, and everyday commercial practice, McConnell synthesizes the most effective techniques and must-know principles into clear, pragmatic guidance. No matter what your experience level, development environment, or project size, this book will inform and stimulate your thinking--and help you build the highest quality code.
+                            Discover the timeless techniques and strategies that help you:
+                            
+                            
+                            Design for minimum complexity and maximum creativity Reap the benefits of collaborative development Apply defensive programming techniques to reduce and flush out errors Exploit opportunities to refactor--or evolve--code, and do it safely Use construction practices that are right-weight for your project Debug problems quickly and effectively Resolve critical construction issues early and correctly Build quality into the beginning, middle, and end of your project
+                            
+                            Show more </p></td>
+                        <td><p> First published January 1, 1993</p></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td>16</td>
+                        <td>Introduction to Algorithms</td>
+                        <td><img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1387741681i/108986.jpg" alt="Introduction to Algorithms" width="200" height="250"></td>
+                        <td>Thomas H. Cormen
+                            , 
+                            Charles E. Leiserson
+                            , 
+                            Ronald L. Rivest</td>
+                        <td><p> A comprehensive update of the leading algorithms text, with new material on matchings in bipartite graphs, online algorithms, machine learning, and other topics.</p> </td>
+                        <td><p>Published September 1, 2001 </p></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td>17</td>
+                        <td>Artificial Intelligence: A Guide for Thinking Humans</td>
+                        <td><img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1559680391i/43565360.jpg" alt="Artificial Intelligence: A Guide for Thinking Humans" width="200" height="250"></td>
+                        <td>Melanie Mitchell</td>
+                        <td><p>A sweeping examination of the current state of artificial intelligence and how it is remaking our world
+
+                            No recent scientific enterprise has proved as alluring, terrifying, and filled with extravagant promise and frustrating setbacks as artificial intelligence. The award-winning author Melanie Mitchell, a leading computer scientist, now reveals AI’s turbulent history and the recent spate of apparent successes, grand hopes, and emerging fears surrounding it. </p></td>
+                        <td><p>First published October 15, 2019 </p></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td>18</td>
+                        <td>Game Engine Black Book, Wolfenstein 3D</td>
+                        <td><img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1505800605i/36165638.jpg" alt="Game Engine Black Book, Wolfenstein 3D" width="200" height="250"></td>
+                        <td>Fabien Sanglard
+                        </td>
+                        <td><p>How was Wolfenstein 3D made and what were the secrets of its speed? How did id Software manage to turn a machine designed to display static images for word processing and spreadsheet applications into the best gaming platform in the world, capable of running games at seventy frames per seconds? If you have ever asked yourself these questions, Game Engine Black Book is for you. </p></td>
+                        <td><p>First published January 1, 2017   </p> </td>
+                    </tr>
+                  </tbody>
+            </table>
+            <div class="bottom-field">
+                <ul class="pagination">
+                  <li class="prev"><a href="#" id="prev">&#139;</a></li>
+                    <!-- page number here -->
+                  <li class="next"><a href="#" id="next">&#155;</a></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    
+
+
+
+<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
